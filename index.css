@@ -16,6 +16,8 @@
     border: solid 2px black;
     border-radius: 20px;
     padding: 5px;
+    background-color: lightgray;
+    box-shadow: 10px 10px 10px grey;
 }
 
 .row{
@@ -44,12 +46,31 @@
     padding: 10px;
     font-size: 45px;
     position: relative;
+    background-color: white;
+    background-color: rgb(243, 243, 243);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.screen p{
+    height: 50%;
 }
 
 button{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     width: 25%;
     margin: 3px;
     border-radius: 20px;
+    background-color: rgb(162, 177, 192);
+    box-shadow: 3px 3px 3px grey;
+}
+
+button:hover{
+    background-color: lightskyblue;
 }
 
 #equals{
