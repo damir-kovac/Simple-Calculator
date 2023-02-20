@@ -68,6 +68,13 @@ button{
     background-color: rgb(162, 177, 192);
     box-shadow: 3px 3px 3px grey;
 }
+#c, #ac{
+    color: black;
+    background-color: rgb(166, 44, 44);
+}
+#c:hover , #ac:hover {
+    background-color: rgb(229, 116, 116);
+}
 
 button:hover{
     background-color: lightskyblue;
