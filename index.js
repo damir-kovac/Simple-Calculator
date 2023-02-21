@@ -6,6 +6,7 @@ const allClear = document.querySelector("#ac");
 const backspace = document.querySelector("#backspace");
 const operators = document.querySelectorAll(".operator");
 const equals = document.querySelector("#equals");
+const dot = document.querySelector("#dot");
 let currentOperator = "";
 let value1 = "";
 
@@ -92,6 +93,12 @@ hadnleEquals = () =>{
     }
 }
 
+handleDot = (e) =>{
+    if(!msg1.innerHTML.includes(".")){
+        msg1.innerHTML += e.target.innerText;
+    }
+}
+
 // ADDING EVENT LISTENERS
 
 for (const button of digits) {
@@ -106,3 +113,4 @@ clear.addEventListener("click", handleClear);
 allClear.addEventListener("click", handleAllClear);
 backspace.addEventListener("click", handleBackspace);
 equals.addEventListener("click", hadnleEquals);
+dot.addEventListener("click", handleDot);
